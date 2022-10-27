@@ -7,11 +7,12 @@ import { User } from './user';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   topics = ['Angular', 'React', 'Java', 'Python'];
 
-   topicHasError= true;
-
   userModel = new User('', 'rob@gmail.com', 1234567890, 'default', 'morning', true);
+
+  topicHasError= true;
 
   validateTopic(value:string){
    if(value === 'default')
